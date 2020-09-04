@@ -39,10 +39,6 @@ const referenceHit = {
   objectID: '6443034',
 };
 
-const searchParams = new URLSearchParams(window.location.search);
-
-const userToken = searchParams.get('userToken') || '';
-
 const myCarousels = [
   {
     title: 'Popular right now',
@@ -62,12 +58,6 @@ const myCarousels = [
       filters: 'onSale:true',
     },
   },
-  // {
-  //   title: 'Last chance',
-  //   context: 'last-chance',
-  //   indexName: 'perso_movies_carousel_last_chance',
-  // },
-
   {
     title: 'What you need to Work From Home',
     context: 'work_from_home',
@@ -129,7 +119,6 @@ const addWidgets = () => {
                   hit: carousel.relatedRef,
                   matchingPatterns: {
                     brand: { score: 3 },
-                    // categories: { score: 2 },
                   },
                 }),
                 customCarousel({
