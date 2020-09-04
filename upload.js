@@ -1,7 +1,9 @@
 const fetch = require('node-fetch');
 const algoliasearch = require('algoliasearch');
 
-const client = algoliasearch('GENYJWQIK2', '509ab084a2526990dc8e3dad0a301db6');
+const client = algoliasearch('GENYJWQIK2', '3456DSFGkjhgjhrehsdj123');
+
+
 const index = client.initIndex('e_commerce');
 
 const indexData = async () => {
